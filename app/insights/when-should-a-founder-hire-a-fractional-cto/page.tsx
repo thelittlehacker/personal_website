@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { createPageMetadata } from "@/lib/metadata";
 import CTAButton from "@/components/ui/CTAButton";
+import ArticleAuthor from "@/components/sections/ArticleAuthor";
 
 export const metadata: Metadata = createPageMetadata({
   title: "When Should a Founder Hire a Fractional CTO? | Aditya Pranav",
@@ -272,6 +273,8 @@ export default function ArticlePage() {
             </Link>
           </div>
         </div>
+
+        <ArticleAuthor />
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl bg-[#1C2B2A] p-8 text-center">

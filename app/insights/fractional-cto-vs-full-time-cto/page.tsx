@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { createPageMetadata } from "@/lib/metadata";
 import CTAButton from "@/components/ui/CTAButton";
+import ArticleAuthor from "@/components/sections/ArticleAuthor";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Fractional CTO vs Full-Time CTO: What Early Teams Should Know | Aditya Pranav",
@@ -349,24 +350,7 @@ export default function ArticlePage() {
           </div>
         </div>
 
-        {/* Author note */}
-        <div className="mt-8 rounded-xl border border-[#E8E0D4] bg-white p-5">
-          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#2F6F68]">About the Author</p>
-          <p className="mt-2 text-sm leading-relaxed text-[#5F5F5F]">
-            Aditya Pranav works with founders as a Fractional CTO and Product-Engineering Advisor, helping teams make better decisions across architecture, roadmap, delivery, vendors, and AI-enabled execution.
-          </p>
-          <a
-            href="https://www.linkedin.com/in/aditya-pranav"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-2 text-xs font-semibold text-[#2F6F68] hover:underline"
-          >
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-            Connect on LinkedIn
-          </a>
-        </div>
+        <ArticleAuthor />
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl bg-[#1C2B2A] p-8 text-center">
