@@ -343,7 +343,7 @@ export default function ArticlePage() {
         {/* Risk register */}
         <h2 className="mt-12 text-2xl font-bold text-[#171717]">Create a Risk Register Before Scaling</h2>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          The output of a pre-scaling review should not be a list of complaints about the agency. It should be an actionable risk register that helps the founder decide what to address, in what order, and on what timeline.
+          When I conduct these reviews, the output is never a list of complaints about the agency. It is an actionable risk register that helps you decide what to fix now, what to fix later, and what to accept.
         </p>
         <div className="mt-6 overflow-hidden rounded-xl border border-[#E8E0D4]">
           <table className="w-full text-sm">
@@ -377,7 +377,7 @@ export default function ArticlePage() {
         {/* Fractional CTO section */}
         <h2 className="mt-12 text-2xl font-bold text-[#171717]">How a Fractional CTO Helps Review an Agency-Built Product</h2>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          For most non-technical founders, conducting this review independently is difficult. It is not just about reading code — it is about interpreting what the code and architecture mean for business risk, future development cost, team hiring, and roadmap sequencing.
+          I don't expect non-technical founders to conduct this review themselves. The value isn't in reading the code anyway — it's in interpreting what that code means for your business risk, future development cost, and hiring plans.
         </p>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
           Having worked across fintech, SaaS, and founder-led product companies — reviewing backends built on Node.js, PostgreSQL, and AWS, assessing payment integrations, vendor builds, and delivery governance — the patterns I encounter most often are not catastrophic failures. They are accumulated small decisions that become expensive constraints when the product starts to grow.
