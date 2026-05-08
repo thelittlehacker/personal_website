@@ -17,7 +17,8 @@ export const insightCards = [
     title: "How to Know If Your MVP Scope Is Too Large",
     description:
       "Indicators that your MVP needs restructuring before development spend increases.",
-    cta: "Read insight",
+    cta: "Read article",
+    href: "/insights/how-to-know-if-your-mvp-scope-is-too-large",
   },
   {
     title: "Why Product Roadmaps Fail Without Business Prioritization",
