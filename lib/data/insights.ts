@@ -24,7 +24,8 @@ export const insightCards = [
     title: "Why Product Roadmaps Fail Without Business Prioritization",
     description:
       "Why feature-heavy planning breaks execution and what to do instead.",
-    cta: "Read insight",
+    cta: "Read article",
+    href: "/insights/why-product-roadmaps-fail-without-business-prioritization",
   },
   {
     title: "How to Review an Agency-Built Product Before Scaling",
