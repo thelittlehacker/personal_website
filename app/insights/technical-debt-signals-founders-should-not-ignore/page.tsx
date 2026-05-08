@@ -198,7 +198,7 @@ export default function ArticlePage() {
 
         <h2 className="mt-12 text-2xl font-bold text-[#171717]">Why Founders Miss These Signals Early</h2>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          Most of the signals above are gradual. A feature that takes 20% longer than expected does not trigger an alarm. A deployment that requires one extra manual step feels like a minor inconvenience. A developer warning about a fragile module gets noted and deprioritised.
+          When I audit struggling engineering teams, I rarely find that the founders ignored a massive, flashing red light. Instead, they missed the gradual signals. A feature taking 20% longer does not trigger an alarm. One extra manual deployment step feels like a minor inconvenience. A developer warning about a fragile module gets noted and deprioritised.
         </p>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
           The problem is that each small signal, left unaddressed, compounds. The 20% slowdown becomes 60%. The manual deployment step multiplies. The fragile module gets worked around by more fragile code. And by the time the cumulative effect is undeniable, the cost of addressing it is significantly higher than it would have been six months earlier.
@@ -252,7 +252,7 @@ export default function ArticlePage() {
 
         <h2 className="mt-12 text-2xl font-bold text-[#171717]">How a Fractional CTO Helps Identify and Manage Technical Debt</h2>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          For non-technical founders, the challenge is not the willingness to address technical debt — it is the visibility to identify which debt is actually costing the business. Not every engineering concern deserves immediate attention. Knowing which ones do requires both technical and business judgment.
+          I find that most founders are perfectly willing to fix technical debt — once they understand what it is costing them. The challenge is not willingness; it is visibility. Not every engineering complaint deserves immediate attention. Knowing which ones do requires both technical depth and commercial judgment.
         </p>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
           Working across backend systems built on Node.js, PostgreSQL, and AWS — including fintech products, payment-heavy workflows, and delivery governance in growing teams — the debt patterns that create the most business impact are almost always the same ones that get the least visibility early: schema design decisions, deployment fragility, and untested critical flows.
