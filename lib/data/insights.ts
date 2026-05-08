@@ -52,18 +52,21 @@ export const insightCards = [
     title: "How to Create Engineering Accountability Without Micromanagement",
     description:
       "Delivery governance patterns that improve ownership while preserving team autonomy.",
-    cta: "Read insight",
+    cta: "Read article",
+    href: "/insights/how-to-create-engineering-accountability-without-micromanagement",
   },
   {
     title: "What Founders Should Ask Before Choosing a Tech Stack",
     description:
       "Strategic stack questions that reduce rework risk and improve long-term fit.",
-    cta: "Coming soon",
+    cta: "Read article",
+    href: "/insights/what-founders-should-ask-before-choosing-a-tech-stack",
   },
   {
     title: "When Does a Startup Need Fractional CPO Support?",
     description:
       "Product clarity triggers that justify part-time product leadership.",
-    cta: "Coming soon",
+    cta: "Read article",
+    href: "/insights/when-does-a-startup-need-fractional-cpo-support",
   },
 ];
