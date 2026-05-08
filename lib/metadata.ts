@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const siteUrl = "https://adityapranav.in";
-const defaultImage = "/images/3.png";
+const defaultImage = "/photo-speaking.png";
 
 export const siteMetadata = {
   name: "Aditya Pranav",
@@ -22,11 +22,20 @@ export function createPageMetadata({
   path: string;
 }): Metadata {
   const url = `${siteUrl}${path}`;
+  const ogImage = `${siteUrl}${defaultImage}`;
   return {
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, siteName: siteMetadata.name, images: [{ url: defaultImage }], type: "website" },
-    twitter: { card: "summary_large_image", title, description, images: [defaultImage] },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: siteMetadata.name,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      type: "website",
+      locale: "en_US",
+    },
+    twitter: { card: "summary_large_image", title, description, images: [ogImage] },
   };
 }

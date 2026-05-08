@@ -26,6 +26,18 @@ export const metadata: Metadata = {
   title: siteMetadata.defaultTitle,
   description: siteMetadata.defaultDescription,
   metadataBase: new URL(siteMetadata.siteUrl),
+  authors: [{ name: "Aditya Pranav", url: siteMetadata.siteUrl }],
+  robots: { index: true, follow: true },
+  openGraph: {
+    siteName: siteMetadata.name,
+    type: "website",
+    locale: "en_US",
+    images: [{ url: siteMetadata.defaultImage, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [siteMetadata.defaultImage],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

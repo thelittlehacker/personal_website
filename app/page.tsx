@@ -17,7 +17,7 @@ import {
 } from "@/components/visual/HomeVisuals";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Tech n Tale | Fractional CTO for Founder-Led Products",
+  title: "Aditya Pranav | Fractional CTO for Founder-Led Products",
   description:
     "Fractional CTO and Product Engineering Advisory for founders. CTO-level guidance across architecture, roadmap, delivery, vendors, and AI adoption.",
   path: "/",
@@ -41,6 +41,7 @@ export default function HomePage() {
     name: "Aditya Pranav",
     url: "https://adityapranav.in",
     jobTitle: "Fractional CTO and Product Engineering Advisor",
+    sameAs: ["https://www.linkedin.com/in/aditya-pranav"],
   };
 
   return (

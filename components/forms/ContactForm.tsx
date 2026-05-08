@@ -55,6 +55,8 @@ export default function ContactForm() {
       netlify-honeypot="bot-field"
     >
       <input type="hidden" name="form-name" value="contact" />
+      {/* Honeypot — hidden from humans, bots fill it in */}
+      <input type="text" name="bot-field" className="hidden" aria-hidden="true" tabIndex={-1} />
       <input className="rounded-lg border border-slate-300 px-3 py-2" name="fullName" placeholder="Full Name" required />
       <input className="rounded-lg border border-slate-300 px-3 py-2" name="workEmail" type="email" placeholder="Work Email" required />
       <input className="rounded-lg border border-slate-300 px-3 py-2" name="company" placeholder="Company" required />
