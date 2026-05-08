@@ -38,7 +38,8 @@ export const insightCards = [
     title: "Technical Debt Signals Founders Should Not Ignore",
     description:
       "Early warning signs that affect delivery speed, scalability, and system reliability.",
-    cta: "Read insight",
+    cta: "Read article",
+    href: "/insights/technical-debt-signals-founders-should-not-ignore",
   },
   {
     title: "Practical AI Use Cases for Early-Stage Products",
