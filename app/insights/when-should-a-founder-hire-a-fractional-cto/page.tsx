@@ -282,10 +282,10 @@ export default function ArticlePage() {
           <h3 className="mt-3 text-xl font-bold text-white lg:text-2xl">
             Not Sure If You Need a Fractional CTO Right Now?
           </h3>
-          <p className="mt-3 text-sm leading-relaxed text-[#a8c5c2]">
+          <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-[#a8c5c2]">
             Start with a focused strategy conversation. We can review your product stage, current technical challenges, and whether senior guidance makes sense for where you are.
           </p>
-          <div className="mt-6">
+          <div className="mt-6 flex justify-center">
             <CTAButton href="/contact">Book a Strategy Call</CTAButton>
           </div>
         </div>

@@ -358,10 +358,10 @@ export default function ArticlePage() {
           <h3 className="mt-3 text-xl font-bold text-white lg:text-2xl">
             Need CTO-Level Clarity Before Your Next Product or Technology Decision?
           </h3>
-          <p className="mt-3 text-sm leading-relaxed text-[#a8c5c2]">
+          <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-[#a8c5c2]">
             Book a strategy call to review your architecture, roadmap, delivery risks, or Fractional CTO needs. No pressure — just a focused conversation about where you are and what would actually help.
           </p>
-          <div className="mt-6">
+          <div className="mt-6 flex justify-center">
             <CTAButton href="/contact">Book a Strategy Call</CTAButton>
           </div>
         </div>

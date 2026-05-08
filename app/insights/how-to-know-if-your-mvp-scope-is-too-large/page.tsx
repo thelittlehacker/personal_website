@@ -340,10 +340,10 @@ export default function ArticlePage() {
           <h3 className="mt-3 text-xl font-bold text-white lg:text-2xl">
             Unsure Whether Your MVP Scope Is Too Large?
           </h3>
-          <p className="mt-3 text-sm leading-relaxed text-[#a8c5c2]">
+          <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-[#a8c5c2]">
             Book a strategy call to review your MVP scope, technical roadmap, and version-one build plan. No pressure — just a focused conversation about what version one actually needs to accomplish.
           </p>
-          <div className="mt-6">
+          <div className="mt-6 flex justify-center">
             <CTAButton href="/contact">Book a Strategy Call</CTAButton>
           </div>
         </div>
