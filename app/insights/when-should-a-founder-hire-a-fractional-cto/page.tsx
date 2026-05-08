@@ -95,13 +95,13 @@ export default function ArticlePage() {
           A <strong>Fractional CTO</strong> gives founders access to senior technology direction without the commitment of a full-time executive hire. The question is not whether you need one eventually — the question is recognising the right moment to bring one in.
         </p>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          This article walks through five clear signals that indicate a founder needs Fractional CTO support, what that support actually covers, and how to think about the decision practically.
+          In my work advising founders, these are the five practical patterns I see right before technical debt becomes a crisis, what Fractional CTO support actually covers, and how to think about the decision practically.
         </p>
 
         {/* Section 1 */}
         <h2 className="mt-12 text-2xl font-bold text-[#171717]">What Is a Fractional CTO?</h2>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          A Fractional CTO is a senior technology leader who works with your company on a part-time, advisory, or sprint-based basis. They bring the same experience and judgement as a full-time CTO — architecture direction, roadmap planning, delivery governance, team leadership, and vendor oversight — but structured to fit the stage and budget of an early or growing company.
+          A Fractional CTO is not a part-time developer. They are a senior technology leader who owns the quality of your technical decisions. You bring them in on a part-time or sprint basis to handle the things developers usually don't: architecture direction, roadmap sequencing, delivery governance, and vendor oversight.
         </p>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
           The engagement is not about writing code. It is about making the right technology decisions, at the right time, so that your team builds the right things in a way that can actually scale.
@@ -221,10 +221,10 @@ export default function ArticlePage() {
         {/* Section 5 */}
         <h2 className="mt-12 text-2xl font-bold text-[#171717]">Common Mistakes Founders Make Before Getting CTO Support</h2>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          These patterns appear consistently in founder-led product companies that delayed bringing in senior technical leadership:
+          I see the same mistakes repeatedly when founders wait too long to bring in technical leadership. Usually, it looks like this:
         </p>
         <ul className="mt-4 space-y-2 text-[17px] leading-relaxed text-[#3a3a3a]">
-          <li className="flex gap-3"><span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-[#2F6F68]" /><span><strong>Assuming the senior developer on the team can fill the CTO role.</strong> Senior engineers are excellent at execution. The CTO role requires a different set of decisions — business alignment, architecture strategy, team structure, and risk management — that most senior engineers are not positioned to own.</span></li>
+          <li className="flex gap-3"><span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-[#2F6F68]" /><span><strong>Promoting your best developer to CTO by default.</strong> Being a great senior engineer is about execution. Being a CTO is about business alignment, architecture strategy, and risk management. If you force an executor into a strategy role without support, you usually lose a great developer and get a struggling CTO.</span></li>
           <li className="flex gap-3"><span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-[#2F6F68]" /><span><strong>Waiting until after launch to think about scalability.</strong> The architecture decisions made during MVP development directly affect how hard it is to scale. Changing foundational choices post-launch is significantly more expensive than making better choices early.</span></li>
           <li className="flex gap-3"><span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-[#2F6F68]" /><span><strong>Letting the vendor define the architecture.</strong> Vendors and agencies build what gets them paid. Without a technically informed review on the founder's side, important long-term decisions default to whoever is writing the code.</span></li>
           <li className="flex gap-3"><span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-[#2F6F68]" /><span><strong>Conflating moving fast with moving in the right direction.</strong> Speed without direction creates technical debt at scale. The goal is not to slow down — it is to make sure speed is building toward something that can be maintained and grown.</span></li>
