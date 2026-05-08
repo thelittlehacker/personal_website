@@ -185,13 +185,10 @@ export default function ArticlePage() {
           An MVP is not a mini version of the final product. It is a learning tool.
         </p>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          Eric Ries, who coined the term in <em>The Lean Startup</em>, defines it as "the version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort." The emphasis is on learning — not on features, polish, or completeness.
+          The textbook definition is "the version that allows maximum learning with minimum effort." But in practice, I prefer the standard Y Combinator advice: launch earlier than feels comfortable. If you aren't slightly embarrassed by version one, you probably built too much.
         </p>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          Atlassian describes an MVP as the simplest version of a product that lets teams validate ideas and gather real feedback quickly. Y Combinator's consistent advice to founders is to launch earlier than feels comfortable, reach real users, and learn from actual behaviour rather than waiting for a polished product.
-        </p>
-        <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          The purpose of an MVP is to reduce uncertainty before larger investment. Every feature in scope should serve that purpose. If it does not, it is product roadmap — not MVP.
+          The purpose of an MVP is to reduce business uncertainty before you spend real money. Every feature in scope should serve that purpose. If it does not, it belongs on the product roadmap — not in the MVP.
         </p>
 
         {/* 8 Signs */}
