@@ -154,7 +154,7 @@ export default function ArticlePage() {
           A full-time CTO is a permanent executive who owns the entire technical function of the business. They are embedded in daily operations, not available on a periodic basis.
         </p>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          Their remit typically includes:
+          When you hire a full-time CTO, you are not just buying technical skills. You are buying continuous ownership of the entire engineering function. That looks like:
         </p>
         <ul className="mt-4 space-y-2">
           {[
@@ -260,7 +260,7 @@ export default function ArticlePage() {
         {/* Section 7 */}
         <h2 className="mt-12 text-2xl font-bold text-[#171717]">Common Mistakes Founders Make</h2>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          These patterns appear often enough that they are worth naming directly.
+          I see the same mistakes repeatedly when founders try to solve a leadership gap with the wrong type of hire. Usually, it looks like this:
         </p>
         <ul className="mt-4 space-y-3">
           {[
