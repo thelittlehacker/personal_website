@@ -10,7 +10,8 @@ export const insightCards = [
     title: "Fractional CTO vs Full-Time CTO: What Early Teams Should Know",
     description:
       "A practical comparison based on stage, complexity, and execution risk.",
-    cta: "Read insight",
+    cta: "Read article",
+    href: "/insights/fractional-cto-vs-full-time-cto",
   },
   {
     title: "How to Know If Your MVP Scope Is Too Large",
