@@ -288,6 +288,9 @@ export default function ArticlePage() {
 
         {/* Section 7 */}
         <h2 className="mt-12 text-2xl font-bold text-[#171717]">Common Roadmap Prioritization Mistakes</h2>
+        <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
+          When I review roadmaps for early-stage teams, the same prioritisation anti-patterns show up repeatedly. Here is what they look like in practice:
+        </p>
         <ul className="mt-5 space-y-3">
           {[
             ["Prioritizing the biggest client request without checking product strategy", "Client requests matter. But one client's workflow is not always the right basis for the product roadmap. Build for the segment, not the loudest account."],
@@ -312,7 +315,7 @@ export default function ArticlePage() {
         {/* Section 8 — Frameworks */}
         <h2 className="mt-12 text-2xl font-bold text-[#171717]">Useful Prioritization Frameworks for Founders</h2>
         <p className="mt-4 text-[17px] leading-relaxed text-[#3a3a3a]">
-          Frameworks are useful because they replace subjective debates with structured criteria. They do not make decisions automatically — but they make tradeoffs clearer and easier to communicate.
+          I don't believe in following frameworks blindly, but they are incredibly useful for one specific reason: they force you to replace subjective arguments ("I think we need this") with structured criteria. Here are the ones I see work best for early teams:
         </p>
         <div className="mt-6 space-y-4">
           {frameworks.map((f) => (
