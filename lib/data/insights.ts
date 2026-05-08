@@ -45,7 +45,8 @@ export const insightCards = [
     title: "Practical AI Use Cases for Early-Stage Products",
     description:
       "Where AI can create value without adding unnecessary product complexity.",
-    cta: "Read insight",
+    cta: "Read article",
+    href: "/insights/practical-ai-use-cases-for-early-stage-products",
   },
   {
     title: "How to Create Engineering Accountability Without Micromanagement",
