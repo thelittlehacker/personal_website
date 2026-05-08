@@ -57,11 +57,11 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#FAF7F0]/20 to-[#FAF7F0]" />
         </div>
 
-        <div className="container-wrap relative grid gap-10 py-14 lg:grid-cols-[0.9fr_1fr] lg:items-start lg:py-20">
-          {/* Left — Clarity Board */}
+        <div className="container-wrap relative flex flex-col-reverse gap-10 py-14 lg:grid lg:grid-cols-[0.9fr_1fr] lg:items-start lg:py-20">
+          {/* Board: second visually on mobile (flex-col-reverse), first column on lg grid */}
           <FounderTechCommandCenter />
 
-          {/* Right — Text (photo shows through here) */}
+          {/* Headline first on mobile, second column on lg (photo shows through here on desktop) */}
           <div>
             <p className="label-mono">Fractional CTO · Product Engineering · AI Advisory</p>
             <h1 className="mt-4 text-[#171717]">
