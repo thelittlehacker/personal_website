@@ -31,7 +31,8 @@ export const insightCards = [
     title: "How to Review an Agency-Built Product Before Scaling",
     description:
       "A founder-side checklist for architecture quality, maintainability, and ownership.",
-    cta: "Read insight",
+    cta: "Read article",
+    href: "/insights/how-to-review-an-agency-built-product-before-scaling",
   },
   {
     title: "Technical Debt Signals Founders Should Not Ignore",
