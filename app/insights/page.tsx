@@ -23,7 +23,7 @@ export default function InsightsPage() {
         <SectionHeading title="Articles" />
         <div className="grid gap-4 md:grid-cols-2">
           {insightCards.map((item) => (
-            <InsightCard key={item.title} title={item.title} description={item.description} cta={item.cta} />
+            <InsightCard key={item.title} title={item.title} description={item.description} cta={item.cta} href={"href" in item ? item.href : undefined} />
           ))}
         </div>
       </section>

@@ -99,16 +99,24 @@ export function InsightCard({
   title,
   description,
   cta = "Coming soon",
+  href,
 }: {
   title: string;
   description: string;
   cta?: string;
+  href?: string;
 }) {
   return (
     <CardWrap>
       <h3 className="font-semibold text-slate-900">{title}</h3>
       <p className="mt-2 text-sm text-slate-600">{description}</p>
-      <p className="mt-3 text-sm font-semibold text-indigo-600">{cta}</p>
+      {href ? (
+        <Link href={href} className="mt-3 inline-block text-sm font-semibold text-[#2F6F68] hover:underline">
+          {cta} →
+        </Link>
+      ) : (
+        <p className="mt-3 text-sm font-semibold text-slate-400">{cta}</p>
+      )}
     </CardWrap>
   );
 }

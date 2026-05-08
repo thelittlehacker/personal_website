@@ -3,7 +3,8 @@ export const insightCards = [
     title: "When Should a Founder Hire a Fractional CTO?",
     description:
       "Stage signals and decision triggers that indicate when CTO-level guidance becomes essential.",
-    cta: "Read insight",
+    cta: "Read article",
+    href: "/insights/when-should-a-founder-hire-a-fractional-cto",
   },
   {
     title: "Fractional CTO vs Full-Time CTO: What Early Teams Should Know",
