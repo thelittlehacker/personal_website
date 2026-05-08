@@ -1,0 +1,36 @@
+{
+  "name": "test-master",
+  "version": "1.0.0",
+  "description": "A static personal portfolio website for **Aditya Pranav** — Entrepreneur, Software Engineer, and Full Stack Web Developer based in Gurugram, India.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "next": "^16.2.6",
+    "next-sitemap": "^4.2.3",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.11",
+    "@types/node": "^25.6.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^10.3.0",
+    "eslint-config-next": "^16.2.6",
+    "postcss": "^8.5.14",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.4.5"
+  },
+  "private": true
+}

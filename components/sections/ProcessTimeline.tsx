@@ -1,0 +1,3 @@
+"use client";
+import { motion } from "framer-motion";
+export default function ProcessTimeline({ steps }: { steps: { title: string; description: string }[] }) { return (<ol className="space-y-4">{steps.map((step, idx) => (<motion.li key={step.title} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.06 }} className="rounded-xl2 border border-slate-200 bg-white p-5"><p className="text-sm font-semibold text-indigo-600">Step {idx + 1}</p><h3 className="mt-1 font-semibold text-slate-900">{step.title}</h3><p className="mt-2 text-sm text-slate-600">{step.description}</p></motion.li>))}</ol>); }

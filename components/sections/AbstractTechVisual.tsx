@@ -1,0 +1,1 @@
+export default function AbstractTechVisual() { return <div className="rounded-xl2 border border-slate-200 bg-gradient-to-br from-indigo-50 to-teal-50 p-8 text-sm text-slate-600">Product roadmap • Architecture layers • Delivery metrics • Founder dashboard</div>; }

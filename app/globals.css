@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design tokens ── */
+:root {
+  color-scheme: light;
+  --bg:      #FAF7F0;
+  --surface: #FFFCF7;
+  --text:    #171717;
+  --muted:   #5F5F5F;
+  --accent:  #2F6F68;
+  --accent2: #B46A3C;
+  --border:  #E8E0D4;
+  --highlight: #EFE7D8;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body), "DM Sans", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  /* very subtle warm grain */
+  background-image: radial-gradient(rgba(80, 60, 30, 0.025) 0.5px, transparent 0.5px);
+  background-size: 3px 3px;
+}
+
+/* ── Headings: Plus Jakarta Sans ── */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading), "Plus Jakarta Sans", system-ui, sans-serif;
+  color: #171717;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+}
+
+/* ── Typography scale ── */
+h1 {
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(28px, 3.5vw, 42px);
+  line-height: 1.14;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+p {
+  font-size: clamp(15px, 1.15vw, 17px);
+  line-height: 1.62;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+/* ── Mono: technical labels ONLY ── */
+.label-mono {
+  font-family: var(--font-mono), "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* ── Layout ── */
+.container-wrap {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+/* ── Panel surfaces ── */
+.editorial-shell {
+  background: linear-gradient(180deg, #ffffff 0%, #f6f2ec 100%);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(23, 23, 23, 0.05);
+  border-radius: 12px;
+}
+
+.desk-panel {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(23, 23, 23, 0.05);
+}
+
+/* Blueprint grid — used sparingly */
+.blueprint-board {
+  background:
+    linear-gradient(to right, rgba(47, 111, 104, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(47, 111, 104, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Warm annotation accent line */
+.annotation-line {
+  border-left: 2px solid var(--accent);
+  padding-left: 10px;
+}
+
+/* Advisory card ── softer than before */
+.advisory-note {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(23, 23, 23, 0.04);
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
+}
+.advisory-note:hover {
+  box-shadow: 0 6px 20px rgba(47, 111, 104, 0.1);
+  border-color: #c0d5d3;
+  transform: translateY(-1px);
+}
+
+/* Ledger strip ── warm tone */
+.ledger-strip {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 29px,
+    rgba(180, 160, 130, 0.08) 29px,
+    rgba(180, 160, 130, 0.08) 30px
+  );
+}
+
+/* Pin label ── mono only here, small accent badge */
+.pin-label {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid #c8dbd9;
+  background: #eef5f4;
+  color: #2F6F68;
+  display: inline-flex;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.section-shell {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(23, 23, 23, 0.04);
+}
+
+/* Section rhythm */
+.mobile-section-pad {
+  @apply py-14 sm:py-16 lg:py-20;
+}
+
+/* Chip — warmer tone */
+.mobile-chip {
+  border: 1px solid #c8dbd9;
+  background: #eef5f4;
+  color: #1f5953;
+  @apply inline-flex rounded-full px-3 py-1 text-xs font-semibold;
+}
+
+/* Horizontal separator with gradient */
+.cto-grid-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.4;
+}

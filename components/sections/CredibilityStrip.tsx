@@ -1,0 +1,1 @@
+export default function CredibilityStrip() { return (<div className="rounded-xl2 border border-slate-200 bg-white p-6"><p className="text-sm text-slate-700">10+ years in product engineering (editable) • VP Engineering experience • Startup founder background • Cross-domain product delivery exposure</p></div>); }
