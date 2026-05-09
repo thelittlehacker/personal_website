@@ -3,6 +3,9 @@ import Script from "next/script";
 import Image from "next/image";
 import Link from "next/link";
 import CTAButton from "@/components/ui/CTAButton";
+import Marquee from "@/components/ui/Marquee";
+import MagneticWrapper from "@/components/ui/MagneticWrapper";
+import FloatingAvailability from "@/components/ui/FloatingAvailability";
 import { createPageMetadata } from "@/lib/metadata";
 import {
   HandwrittenNote,
@@ -73,8 +76,12 @@ export default function HomePage() {
               CTO-level guidance across architecture, roadmap, engineering execution, vendors, and AI adoption — without hiring full-time too early.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <CTAButton href="/contact">Book a Strategy Call</CTAButton>
-              <CTAButton href="/fractional-cto" secondary>Review My Tech Roadmap</CTAButton>
+              <MagneticWrapper>
+                <CTAButton href="/contact">Book a Strategy Call</CTAButton>
+              </MagneticWrapper>
+              <MagneticWrapper>
+                <CTAButton href="/fractional-cto" secondary>Review My Tech Roadmap</CTAButton>
+              </MagneticWrapper>
             </div>
             <div className="mt-5 flex flex-wrap gap-2">
               {chips.map((c) => (
@@ -84,6 +91,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── MARQUEE TICKER ───────────────────────────────────────── */}
+      <Marquee />
 
       {/* ── THE REALITY ──────────────────────────────────────────── */}
       <section className="container-wrap mobile-section-pad">
@@ -190,9 +200,13 @@ export default function HomePage() {
       <section className="container-wrap py-14 lg:py-16">
         <FinalCTAVisualBlock />
         <div className="mt-6 flex justify-center">
-          <CTAButton href="/contact">Book a Strategy Call</CTAButton>
+          <MagneticWrapper>
+            <CTAButton href="/contact">Book a Strategy Call</CTAButton>
+          </MagneticWrapper>
         </div>
       </section>
+
+      <FloatingAvailability />
     </>
   );
 }
