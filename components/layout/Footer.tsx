@@ -97,7 +97,7 @@ export default function Footer() {
                 </div>
               </div>
               <p className="mt-4 border-l-2 border-neutral-700 pl-3 text-sm leading-relaxed text-neutral-400">
-                Fractional CTO &amp; CPO support for founders building scalable digital products.
+                CTO-level clarity for founders who are serious about building.
               </p>
               <Link
                 href="/contact"
