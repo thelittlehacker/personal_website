@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import FooterSpotlight from "@/components/layout/FooterSpotlight";
 import FooterBackToTop from "@/components/layout/FooterBackToTop";
 import { FooterCopyField } from "@/components/layout/FooterCopyField";
@@ -77,19 +78,64 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Slim bottom: nav + legal + back to top (still useful for site UX) */}
-        <div className="relative mt-12 flex flex-col gap-8 border-t border-neutral-800 py-10 lg:mt-16 lg:flex-row lg:items-center lg:justify-between lg:py-12">
-          <p className="text-[11px] tracking-wide text-neutral-600">© {year} Aditya Pranav</p>
-          <nav
-            className="flex flex-wrap gap-x-6 gap-y-2 text-[11px] uppercase tracking-[0.14em] text-neutral-500 lg:absolute lg:left-1/2 lg:-translate-x-1/2"
-            aria-label="Footer"
-          >
-            {indexLinks.map(([label, href]) => (
-              <Link key={href} href={href} className="transition-colors hover:text-neutral-300">
-                {label}
+        {/* Brand card + nav row */}
+        <div className="mt-12 border-t border-neutral-800 pt-12 lg:mt-16 lg:pt-14">
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1fr_auto_auto] lg:items-start lg:gap-16">
+            {/* Brand identity card */}
+            <div>
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/photo-avatar.png"
+                  alt="Aditya Pranav"
+                  width={44}
+                  height={44}
+                  className="h-11 w-11 rounded-full object-cover object-top"
+                />
+                <div>
+                  <p className="text-base font-bold text-white">Aditya Pranav</p>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#6fccc4]">Fractional CTO</p>
+                </div>
+              </div>
+              <p className="mt-4 border-l-2 border-neutral-700 pl-3 text-sm leading-relaxed text-neutral-400">
+                Fractional CTO &amp; CPO support for founders building scalable digital products.
+              </p>
+              <Link
+                href="/contact"
+                className="mt-5 inline-flex items-center rounded-lg bg-[#2F6F68] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#245c56]"
+                style={{ fontFamily: "var(--font-heading), sans-serif" }}
+              >
+                Book a Strategy Call
               </Link>
-            ))}
-          </nav>
+            </div>
+
+            {/* Index */}
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-500">Index</p>
+              <nav className="mt-4 flex flex-col gap-2.5 text-sm text-neutral-400" aria-label="Footer">
+                {indexLinks.map(([label, href]) => (
+                  <Link key={href} href={href} className="w-fit transition-colors hover:text-white">
+                    {label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            {/* Connect */}
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-500">Connect</p>
+              <div className="mt-4 flex flex-col gap-2.5 text-sm text-neutral-400">
+                <a href={siteContactLinks.tel} className="w-fit transition-colors hover:text-white">Call</a>
+                <a href={siteContactLinks.whatsapp} target="_blank" rel="noopener noreferrer" className="w-fit transition-colors hover:text-white">WhatsApp</a>
+                <a href={siteContactLinks.mailto} className="w-fit transition-colors hover:text-white">Email</a>
+                <a href={siteContactLinks.linkedin} target="_blank" rel="noopener noreferrer" className="w-fit transition-colors hover:text-white">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="relative mt-10 flex flex-col gap-4 border-t border-neutral-800 py-8 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-[11px] tracking-wide text-neutral-600">© {year} Aditya Pranav · Fractional CTO for founder-led products.</p>
           <FooterBackToTop />
         </div>
       </div>

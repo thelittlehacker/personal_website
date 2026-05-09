@@ -13,7 +13,6 @@ import {
   FounderProblemStack,
   VisionToExecutionFlow,
   ServiceGrid,
-  RepresentativeWorkTabs,
   EngagementCards,
   FounderAdvisoryTimeline,
   FinalCTAVisualBlock,
@@ -148,14 +147,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── PROBLEMS I COMMONLY HELP WITH ────────────────────────── */}
-      <section className="border-y border-[#E8E0D4] bg-[#FAF7F0]">
-        <div className="container-wrap py-14 lg:py-16">
-          <h2 className="mb-6">Problems I Commonly Help With</h2>
-          <RepresentativeWorkTabs />
-        </div>
-      </section>
-
       {/* ── HOW WE CAN WORK TOGETHER ─────────────────────────────── */}
       <section className="container-wrap mobile-section-pad">
         <h2 className="mb-6">How We Can Work Together</h2>
@@ -181,7 +172,22 @@ export default function HomePage() {
 
       {/* ── BUILT FROM REAL EXPERIENCE ───────────────────────────── */}
       <section className="container-wrap mobile-section-pad">
-        <p className="label-mono mb-5">Built From Real Experience</p>
+        <p className="label-mono mb-8">Built From Real Experience</p>
+        {/* Stat numbers */}
+        <div className="mb-8 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[#E8E0D4] bg-[#E8E0D4] lg:grid-cols-4">
+          {[
+            { num: "10+", label: "Years in Engineering" },
+            { num: "15+", label: "Products & Platforms Built" },
+            { num: "1",   label: "Startup Founded" },
+            { num: "20",  label: "Engineers Led" },
+          ].map(({ num, label }) => (
+            <div key={label} className="flex flex-col items-center justify-center bg-white px-6 py-8 text-center">
+              <p className="text-[2.5rem] font-bold leading-none tracking-tight text-[#171717]">{num}</p>
+              <p className="mt-2 text-xs font-semibold uppercase tracking-[0.1em] text-[#5F5F5F]">{label}</p>
+            </div>
+          ))}
+        </div>
+        {/* Expertise badges */}
         <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {credibility.map(({ label, icon }) => (
             <div key={label}
