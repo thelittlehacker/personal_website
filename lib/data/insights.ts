@@ -24,13 +24,22 @@ export interface InsightItem {
 
 export const insightCards: InsightItem[] = [
   {
+    title: "Why API Sprawl Quietly Slows Startup Growth",
+    description:
+      "How duplicated endpoints and integration exceptions consume engineering time that should be spent on growth.",
+    cta: "Read article",
+    href: "/insights/api-sprawl-slows-startup-growth",
+    category: "Technical Debt & Delivery Governance",
+    badge: "New",
+  },
+  {
     title: "Why AI Coding Agents Need Product Requirements Before They Write Code",
     description:
       "Why clear PRDs, user flows, acceptance criteria, and scope boundaries matter even more with AI-assisted delivery.",
     cta: "Read article",
     href: "/insights/ai-coding-agents-product-requirements",
     category: "Product Engineering",
-    badge: "New",
+    badge: "Trending",
   },
   {
     title: "How Founders Should Think About Agentic AI Before Adding It to Their Product",

@@ -166,8 +166,8 @@ export default function ArticlePage() {
 
         <div className="mb-4 flex flex-wrap items-center gap-2">
           <span className="pin-label inline-block">Product Engineering</span>
-          <span className="inline-flex rounded-full border border-[#B46A3C]/30 bg-[#FFF2E8] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#8A4A25]">
-            New
+          <span className="inline-flex rounded-full border border-[#2F6F68]/25 bg-[#EEF5F4] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#1f5953]">
+            Trending
           </span>
         </div>
         <h1 className="text-3xl font-bold leading-tight text-[#171717] lg:text-4xl">
