@@ -139,7 +139,7 @@ export default function ArticlePage() {
           <span className="text-[#171717]">Why Product Roadmaps Fail Without Business Prioritization</span>
         </nav>
 
-        <p className="label-mono mb-4 text-[#2F6F68]">Product Roadmap · Prioritization · Founder Guidance</p>
+        <span className="pin-label mb-4 inline-block">Product Engineering</span>
         <h1 className="text-3xl font-bold leading-tight text-[#171717] lg:text-4xl">
           Why Product Roadmaps Fail Without Business Prioritization
         </h1>

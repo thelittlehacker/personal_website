@@ -131,7 +131,7 @@ export default function ArticlePage() {
           <span className="text-[#171717]">When Does a Startup Need Fractional CPO Support?</span>
         </nav>
 
-        <p className="label-mono mb-4 text-[#2F6F68]">Fractional CPO · Product Strategy · Founder Guidance</p>
+        <span className="pin-label mb-4 inline-block">Founder Guides</span>
         <h1 className="text-3xl font-bold leading-tight text-[#171717] lg:text-4xl">
           When Does a Startup Need Fractional CPO Support?
         </h1>

@@ -100,14 +100,32 @@ export function InsightCard({
   description,
   cta = "Coming soon",
   href,
+  category,
+  badge,
 }: {
   title: string;
   description: string;
   cta?: string;
   href?: string;
+  category?: string;
+  badge?: "New" | "Trending";
 }) {
   return (
     <CardWrap>
+      <div className="mb-3 flex flex-wrap items-center gap-2">
+        {category && <span className="pin-label inline-block">{category}</span>}
+        {badge && (
+          <span
+            className={`inline-flex rounded-full border px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] ${
+              badge === "New"
+                ? "border-[#B46A3C]/30 bg-[#FFF2E8] text-[#8A4A25]"
+                : "border-[#2F6F68]/25 bg-[#EEF5F4] text-[#1f5953]"
+            }`}
+          >
+            {badge}
+          </span>
+        )}
+      </div>
       <h3 className="font-semibold text-slate-900">{title}</h3>
       <p className="mt-2 text-sm text-slate-600">{description}</p>
       {href ? (

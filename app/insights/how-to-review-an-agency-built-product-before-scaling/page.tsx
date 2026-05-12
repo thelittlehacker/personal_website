@@ -221,7 +221,7 @@ export default function ArticlePage() {
           <span className="text-[#171717]">How to Review an Agency-Built Product Before Scaling</span>
         </nav>
 
-        <p className="label-mono mb-4 text-[#2F6F68]">Architecture Review · Vendor Oversight · Founder Guidance</p>
+        <span className="pin-label mb-4 inline-block">Technical Debt &amp; Delivery Governance</span>
         <h1 className="text-3xl font-bold leading-tight text-[#171717] lg:text-4xl">
           How to Review an Agency-Built Product Before Scaling
         </h1>

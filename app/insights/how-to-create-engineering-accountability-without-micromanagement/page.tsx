@@ -92,7 +92,7 @@ export default function ArticlePage() {
           <span className="text-[#171717]">Engineering Accountability Without Micromanagement</span>
         </nav>
 
-        <p className="label-mono mb-4 text-[#2F6F68]">Delivery Governance · Engineering Leadership · Founder Guidance</p>
+        <span className="pin-label mb-4 inline-block">Technical Debt &amp; Delivery Governance</span>
         <h1 className="text-3xl font-bold leading-tight text-[#171717] lg:text-4xl">
           How to Create Engineering Accountability Without Micromanagement
         </h1>

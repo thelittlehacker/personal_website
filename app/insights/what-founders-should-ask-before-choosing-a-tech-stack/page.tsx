@@ -130,7 +130,7 @@ export default function ArticlePage() {
           <span className="text-[#171717]">What Founders Should Ask Before Choosing a Tech Stack</span>
         </nav>
 
-        <p className="label-mono mb-4 text-[#2F6F68]">Architecture · Tech Stack · Founder Guidance</p>
+        <span className="pin-label mb-4 inline-block">Architecture &amp; Scaling</span>
         <h1 className="text-3xl font-bold leading-tight text-[#171717] lg:text-4xl">
           What Founders Should Ask Before Choosing a Tech Stack
         </h1>

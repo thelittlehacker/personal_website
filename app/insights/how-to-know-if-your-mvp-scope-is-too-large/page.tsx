@@ -161,7 +161,7 @@ export default function ArticlePage() {
           <span className="text-[#171717]">How to Know If Your MVP Scope Is Too Large</span>
         </nav>
 
-        <p className="label-mono mb-4 text-[#2F6F68]">MVP Planning · Product Scope · Founder Guidance</p>
+        <span className="pin-label mb-4 inline-block">Founder Guides</span>
         <h1 className="text-3xl font-bold leading-tight text-[#171717] lg:text-4xl">
           How to Know If Your MVP Scope Is Too Large
         </h1>

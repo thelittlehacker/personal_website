@@ -161,7 +161,7 @@ export default function ArticlePage() {
           <span className="text-[#171717]">Practical AI Use Cases for Early-Stage Products</span>
         </nav>
 
-        <p className="label-mono mb-4 text-[#2F6F68]">AI Advisory · Product Engineering · Founder Guidance</p>
+        <span className="pin-label mb-4 inline-block">AI &amp; Automation</span>
         <h1 className="text-3xl font-bold leading-tight text-[#171717] lg:text-4xl">
           Practical AI Use Cases for Early-Stage Products
         </h1>

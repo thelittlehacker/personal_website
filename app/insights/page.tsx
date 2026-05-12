@@ -1,8 +1,8 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { InsightCard } from "@/components/sections/Cards";
-import { insightCards } from "@/lib/data/insights";
+import InsightsGrid from "@/components/sections/InsightsGrid";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createPageMetadata({
@@ -21,11 +21,9 @@ export default function InsightsPage() {
       />
       <section className="container-wrap py-16">
         <SectionHeading title="Articles" />
-        <div className="grid gap-4 md:grid-cols-2">
-          {insightCards.map((item) => (
-            <InsightCard key={item.title} title={item.title} description={item.description} cta={item.cta} href={"href" in item ? item.href : undefined} />
-          ))}
-        </div>
+        <Suspense>
+          <InsightsGrid />
+        </Suspense>
       </section>
     </>
   );
