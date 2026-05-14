@@ -30,6 +30,13 @@ export const metadata: Metadata = {
   description: siteMetadata.defaultDescription,
   metadataBase: new URL(siteMetadata.siteUrl),
   authors: [{ name: "Aditya Pranav", url: siteMetadata.siteUrl }],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml", sizes: "96x96" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.svg",
+  },
   robots: { index: true, follow: true },
   openGraph: {
     siteName: siteMetadata.name,
