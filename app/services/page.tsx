@@ -73,7 +73,7 @@ export default function ServicesPage() {
     <>
       <PageHero
         title="Fractional CTO, Product Strategy, and Engineering Advisory Services"
-        subtitle="Structured advisory and leadership support for founders who need clarity across technology, product, team execution, and scalable delivery."
+        subtitle="Product-engineering led advisory for founders who need clarity across technology, product decisions, team execution, and scalable delivery."
       />
       <section className="container-wrap py-16">
         <SectionHeading title="Services" description="CTO-first support with complementary product and engineering advisory coverage." />

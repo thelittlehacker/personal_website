@@ -43,7 +43,35 @@ export default function HomePage() {
     name: "Aditya Pranav",
     url: "https://adityapranav.in",
     jobTitle: "Fractional CTO and Product Engineering Advisor",
-    sameAs: ["https://www.linkedin.com/in/aditya-pranav"],
+    description:
+      "Fractional CTO and Product Engineering Advisor helping startup founders make better product and technology decisions. Expertise in software architecture, engineering governance, MVP planning, technical roadmap, AI adoption, and scalable delivery.",
+    image: "https://adityapranav.in/photo-speaking.png",
+    knowsAbout: [
+      "Fractional CTO",
+      "Product engineering",
+      "Software architecture",
+      "Engineering governance",
+      "MVP planning",
+      "Technical roadmap",
+      "AI adoption for startups",
+      "Startup advisory",
+      "Fintech",
+      "Engineering delivery",
+      "Agile delivery",
+    ],
+    sameAs: [
+      "https://www.linkedin.com/in/aditya-pranav",
+      "https://adityapranav.in",
+    ],
+    worksFor: {
+      "@type": "Organization",
+      name: "Aditya Pranav Advisory",
+      url: "https://adityapranav.in",
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "IN",
+    },
   };
 
   return (

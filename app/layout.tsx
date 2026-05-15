@@ -52,10 +52,32 @@ export const metadata: Metadata = {
   },
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Aditya Pranav",
+  url: "https://adityapranav.in",
+  description:
+    "Fractional CTO and Product Engineering Advisory for founders. CTO-level guidance across architecture, roadmap, delivery, vendors, and AI adoption.",
+  author: {
+    "@type": "Person",
+    name: "Aditya Pranav",
+    url: "https://adityapranav.in",
+    sameAs: ["https://www.linkedin.com/in/aditya-pranav"],
+  },
+  inLanguage: "en-US",
+};
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${jakarta.variable} ${dmSans.variable} ${mono.variable}`}>
       <head>
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+          strategy="beforeInteractive"
+        />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"

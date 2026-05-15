@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Script from "next/script";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { ExperienceCard } from "@/components/sections/Cards";
@@ -14,6 +15,43 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function AboutPage() {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Aditya Pranav",
+    url: "https://adityapranav.in/about",
+    jobTitle: "Fractional CTO and Product Engineering Advisor",
+    description:
+      "Fractional CTO and Product Engineering Advisor with experience across startup building, VP-level engineering leadership, backend systems, fintech, payments, enterprise delivery, and AI-assisted product execution.",
+    image: "https://adityapranav.in/photo-about.png",
+    knowsAbout: [
+      "Fractional CTO",
+      "Product engineering",
+      "Software architecture",
+      "Engineering governance",
+      "MVP planning",
+      "Technical roadmap",
+      "AI adoption for startups",
+      "Startup advisory",
+      "Fintech",
+      "Payments",
+      "Engineering delivery",
+    ],
+    sameAs: [
+      "https://www.linkedin.com/in/aditya-pranav",
+      "https://adityapranav.in",
+    ],
+    worksFor: {
+      "@type": "Organization",
+      name: "Aditya Pranav Advisory",
+      url: "https://adityapranav.in",
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "IN",
+    },
+  };
+
   const principles = [
     "Build the right thing before building fast",
     "Keep architecture aligned with business stage",
@@ -25,6 +63,11 @@ export default function AboutPage() {
 
   return (
     <>
+      <Script
+        id="about-person-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       <PageHero
         title="Founder-Friendly Product and Technology Leadership"
         subtitle="I help founders make better product and technology decisions before they become expensive delivery problems."
@@ -47,7 +90,7 @@ export default function AboutPage() {
           <div>
             <p className="label-mono mb-3">Who I Am</p>
             <h2 className="text-2xl font-bold text-[#171717] lg:text-3xl">
-              Builder, Advisor,<br />and Founder's Tech Partner
+              Builder, Product Engineer,<br />and Founder's Tech Partner
             </h2>
             <p className="mt-4 text-[16px] leading-relaxed text-[#5F5F5F]">
               Aditya Pranav is a product-engineering leader with experience across startup building,
@@ -55,12 +98,15 @@ export default function AboutPage() {
               and AI-assisted product execution.
             </p>
             <p className="mt-3 text-[16px] leading-relaxed text-[#5F5F5F]">
+              The working approach is product-engineering first — understanding what should be built, why, and how it should be structured before asking how fast it can be delivered.
+            </p>
+            <p className="mt-3 text-[16px] leading-relaxed text-[#5F5F5F]">
               He works with founders and growing teams as a Fractional CTO, Product & Engineering
               Advisor, and Fractional CPO support partner — helping turn founder vision into
               buildable, scalable product direction.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              {["VP Engineering Experience", "Startup Founder", "Fintech & Payments", "AI Advisory"].map((tag) => (
+              {["Product Engineering", "VP Engineering Experience", "Startup Founder", "Fintech & Payments", "AI Advisory"].map((tag) => (
                 <span key={tag} className="rounded-full border border-[#E8E0D4] bg-[#FAF7F0] px-3 py-1 text-xs font-semibold text-[#2F6F68]">
                   {tag}
                 </span>
