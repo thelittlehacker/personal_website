@@ -32,10 +32,12 @@ export const metadata: Metadata = {
   authors: [{ name: "Aditya Pranav", url: siteMetadata.siteUrl }],
   icons: {
     icon: [
+      { url: "/favicon.ico", sizes: "48x48 96x96" },
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
       { url: "/favicon.svg", type: "image/svg+xml", sizes: "96x96" },
       { url: "/icon.svg", type: "image/svg+xml" },
     ],
-    shortcut: "/favicon.svg",
+    shortcut: "/favicon.ico",
   },
   robots: { index: true, follow: true },
   openGraph: {
