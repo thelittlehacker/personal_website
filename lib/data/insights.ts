@@ -24,13 +24,22 @@ export interface InsightItem {
 
 export const insightCards: InsightItem[] = [
   {
+    title: "Spec-Driven Delivery: The Missing Layer in Agile Teams",
+    description:
+      "Why agile breaks under ambiguity, how lightweight specs prevent rework, and why AI-assisted engineering makes acceptance criteria non-negotiable.",
+    cta: "Read article",
+    href: "/insights/spec-driven-delivery-missing-layer-in-agile",
+    category: "Product Engineering",
+    badge: "New",
+  },
+  {
     title: "AI Agents Are Reshaping the SDLC (And Why Governance Matters)",
     description:
       "How the software development lifecycle is being restructured by AI coding agents, and what human engineers must continue to own.",
     cta: "Read article",
     href: "/insights/human-engineers-ai-engineers-new-sdlc",
     category: "AI & Automation",
-    badge: "New",
+    badge: "Trending",
   },
   {
     title: "Why API Sprawl Quietly Slows Startup Growth",
