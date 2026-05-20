@@ -24,7 +24,7 @@ export interface InsightItem {
 
 export const insightCards: InsightItem[] = [
   {
-    title: "Human Engineers + AI Agents = The New SDLC",
+    title: "AI Agents Are Reshaping the SDLC (And Why Governance Matters)",
     description:
       "How the software development lifecycle is being restructured by AI coding agents, and what human engineers must continue to own.",
     cta: "Read article",

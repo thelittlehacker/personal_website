@@ -5,7 +5,7 @@ import CTAButton from "@/components/ui/CTAButton";
 import ArticleAuthor from "@/components/sections/ArticleAuthor";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Human Engineers + AI Agents = The New SDLC | Aditya Pranav",
+  title: "AI Agents Are Reshaping the SDLC (And Why Governance Matters) | Aditya Pranav",
   description:
     "The software development lifecycle is being restructured by AI coding agents. Here is what changes, what humans must own, and how engineering teams should adapt.",
   path: "/insights/human-engineers-ai-engineers-new-sdlc",
@@ -208,7 +208,7 @@ export default function ArticlePage() {
           <span>/</span>
           <Link href="/insights" className="hover:text-[#2F6F68]">Insights</Link>
           <span>/</span>
-          <span className="text-[#171717]">Human Engineers + AI Agents: The New SDLC</span>
+          <span className="text-[#171717]">AI Agents Are Reshaping the SDLC</span>
         </nav>
 
         <div className="mb-4 flex flex-wrap items-center gap-2">
@@ -219,7 +219,7 @@ export default function ArticlePage() {
         </div>
 
         <h1 className="text-3xl font-bold leading-tight text-[#171717] lg:text-4xl">
-          Human Engineers + AI Agents = The New SDLC. Here Is What That Actually Means.
+          AI Agents Are Reshaping the SDLC (And Why Governance Matters)
         </h1>
         <p className="mt-3 text-sm text-[#5F5F5F]">
           By Aditya Pranav · Fractional CTO &amp; Product Engineering Advisor
