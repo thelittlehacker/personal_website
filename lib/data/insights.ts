@@ -24,13 +24,22 @@ export interface InsightItem {
 
 export const insightCards: InsightItem[] = [
   {
+    title: "Human Engineers + AI Agents = The New SDLC",
+    description:
+      "How the software development lifecycle is being restructured by AI coding agents, and what human engineers must continue to own.",
+    cta: "Read article",
+    href: "/insights/human-engineers-ai-engineers-new-sdlc",
+    category: "AI & Automation",
+    badge: "New",
+  },
+  {
     title: "Why API Sprawl Quietly Slows Startup Growth",
     description:
       "How duplicated endpoints and integration exceptions consume engineering time that should be spent on growth.",
     cta: "Read article",
     href: "/insights/api-sprawl-slows-startup-growth",
     category: "Technical Debt & Delivery Governance",
-    badge: "New",
+    badge: "Trending",
   },
   {
     title: "Why AI Coding Agents Need Product Requirements Before They Write Code",
