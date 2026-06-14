@@ -24,13 +24,22 @@ export interface InsightItem {
 
 export const insightCards: InsightItem[] = [
   {
+    title: "Forward Deployed Engineers (FDE): The Role That Turns Pilots Into Product",
+    description:
+      "What FDEs do, how they differ from Solutions Engineering, and how founders can avoid turning customer delivery into a services trap.",
+    cta: "Read article",
+    href: "/insights/forward-deployed-engineer-why-fde-matters",
+    category: "Product Engineering",
+    badge: "New",
+  },
+  {
     title: "AI Product Engineers: The New Era of Shipping with Judgment",
     description:
       "Why this hybrid role is emerging, what it owns end-to-end, and how teams can ship reliable AI features with evaluation and governance.",
     cta: "Read article",
     href: "/insights/ai-product-engineer-new-era",
     category: "AI & Automation",
-    badge: "New",
+    badge: "Trending",
   },
   {
     title: "Spec-Driven Delivery: The Missing Layer in Agile Teams",
