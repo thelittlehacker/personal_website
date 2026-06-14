@@ -24,13 +24,22 @@ export interface InsightItem {
 
 export const insightCards: InsightItem[] = [
   {
+    title: "AI Product Engineers: The New Era of Shipping with Judgment",
+    description:
+      "Why this hybrid role is emerging, what it owns end-to-end, and how teams can ship reliable AI features with evaluation and governance.",
+    cta: "Read article",
+    href: "/insights/ai-product-engineer-new-era",
+    category: "AI & Automation",
+    badge: "New",
+  },
+  {
     title: "Spec-Driven Delivery: The Missing Layer in Agile Teams",
     description:
       "Why agile breaks under ambiguity, how lightweight specs prevent rework, and why AI-assisted engineering makes acceptance criteria non-negotiable.",
     cta: "Read article",
     href: "/insights/spec-driven-delivery-missing-layer-in-agile",
     category: "Product Engineering",
-    badge: "New",
+    badge: "Trending",
   },
   {
     title: "AI Agents Are Reshaping the SDLC (And Why Governance Matters)",
